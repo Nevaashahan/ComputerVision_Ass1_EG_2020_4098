@@ -9,7 +9,7 @@ os.makedirs("outputs", exist_ok=True)
 img_gray = cv2.imread("carpagani.jpg", cv2.IMREAD_GRAYSCALE)
 img_color = cv2.imread("carpagani.jpg")
 
-# Error handling
+# handling errors
 if img_gray is None or img_color is None:
     raise FileNotFoundError("Make sure 'carpagani.jpg' is in the same directory.")
 
